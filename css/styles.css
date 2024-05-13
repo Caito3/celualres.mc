@@ -59,6 +59,48 @@
 .logo-facebook{
     width: 42%;
 }
+
 .logo-instagram{
     width: 42%;
+}
+
+
+
+
+.marca{
+    background-image: url(../imagenes/celulares.jpg);
+    height: 79vh;
+    display: flex;
+    
+}
+
+.nuestra-marca{
+    background-color: black;
+    width: 100%;
+    height: 44vh;
+    margin: auto;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.titulo{
+    color: rgb(220, 220, 221);
+    font-size: 200%;    
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -2%;
+}
+
+.frase{
+    color: rgb(220, 220, 221);
+    font-size: 170%;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2%;
 }
