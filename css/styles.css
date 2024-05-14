@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(8, 135, 170);
+    height: 16vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo{
+    width: 8%;
+    height: 14vh;
+    margin: 1%;
+    margin-top: 0.42%;
+    margin-left: 5%;
+}
+
+.navegacion{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10.5%;
+    flex-wrap: wrap;
+    
+}
+
+.item{
+    margin: 2%; 
+    list-style-type:none ;
+    font-size: 150%;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    
+}
+
+.logos{
+    width: 7%;
+    margin-left: 10.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-facebook{
+    width: 42%;
+}
+
+.logo-instagram{
+    width: 42%;
+}
+
+
+
+
+.marca{
+    background-image: url(../imagenes/celulares.jpg);
+    height: 79vh;
+    display: flex;
+    
+}
+
+.nuestra-marca{
+    background-color: black;
+    width: 100%;
+    height: 44vh;
+    margin: auto;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.titulo{
+    color: rgb(220, 220, 221);
+    font-size: 200%;    
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -2%;
+}
+
+.frase{
+    color: rgb(220, 220, 221);
+    font-size: 170%;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2%;
+}
