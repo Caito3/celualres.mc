@@ -105,22 +105,6 @@
     margin-top: 2%;
 }
 
-<<<<<<< HEAD
-footer {
-    background-color: rgb(8, 135, 170);
-    color: white; 
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.fuente-footer{
-    font-size: 100%;
-    color: rgb(232, 232, 221);
-    font-family: "Poetsen One", sans-serif;
-    text-align: center;
-=======
 .sobre-nosotros{
     background-image: url(../imagenes/fondo.jpg);
     background-size: cover;
@@ -240,5 +224,23 @@ footer {
     margin-top: 2%;
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
->>>>>>> 3989f6341556d1cd5304716547365bf743295214
+}
+
+.fuente-footer{
+    width: 100%; 
+    color: white;
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+   
+}
+
+footer {
+    background-color: rgb(8, 135, 170);
+    width: 100%; 
+    box-sizing: border-box; 
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+
 }
