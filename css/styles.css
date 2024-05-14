@@ -225,3 +225,22 @@
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
 }
+
+.fuente-footer{
+    width: 100%; 
+    color: white;
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+   
+}
+
+footer {
+    background-color: rgb(8, 135, 170);
+    width: 100%; 
+    box-sizing: border-box; 
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+
+}
