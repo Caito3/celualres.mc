@@ -78,6 +78,55 @@
             </div>
         </section>
 
+
+        <section class="contacto">
+            <p class="titulo-contacto">Contacto</p>
+            <p class="subtitulo-contacto">Haznos saber todas tus dudas y las responderemos lo antes posible</p>
+            
+            <form action="" class="formulario">
+                
+                <label for="nombre" class="label-nombre">
+                    Nombre: 
+                    <input type="text" id="nombre" class="nombre">
+                </label>
+                
+                <label for="email" class="label-email">
+                    E-Mail: 
+                    <input type="email" name="email" id="email" class="email">
+                </label>
+                
+                <label for="telefono" class="label-telefono">
+                    Telefono:
+                    <input type="number" name="telefono" id="telefono" class="telefono">
+                </label>
+
+                <label for="mensaje" class="label-mensaje">
+                    Mensaje:
+                    <input type="text" name="mensaje" id="mensaje" class="mensaje">
+                </label>
+
+                <label for="imagen-campo" class="label-imagen">
+                    Subir imagen
+                    <input type="file" name="imagen" id="imagen-campo" class="imagen-campo">
+                </label>
+
+                <label for="select" class="label-select"> Selecciona tu provincia
+                    <select name="select" id="select" class="select">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Cordoba">Cordoba</option>
+                    </select>
+                </label>
+
+                <label for="checkbox" class="label-checkbox"> Acepto que me respondan a traves de mi E-mail
+                    <input type="checkbox" name="enviar-email" id="cheackbox" class="checkbox">
+                </label>
+                
+                <input type="submit" value="Enviar" class="boton-envio">
+            </form>
+        </section>
+
             <!--- Inicio del footer --->
 
     <footer class="pie-pagina">
@@ -114,5 +163,6 @@
 
         </div>
     </footer>
+
 </body>
 </html>
