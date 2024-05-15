@@ -68,7 +68,7 @@
 
 
 .marca{
-    background-image: url(../imagenes/celulares.jpg);
+    background-image: url(../imagenes/celulares-fondo.jpg);
     height: 79vh;
     display: flex;
     
@@ -224,4 +224,170 @@
     margin-top: 2%;
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
+}
+
+.contacto{
+    background-image: url(../imagenes/fondo.jpg);
+    height: 137vh;
+    
+}
+
+.titulo-contacto{
+    font-size: 290%;
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    padding: 2%;
+    color: rgb(91, 97, 103);
+}
+
+.subtitulo-contacto{
+    font-size: 200%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+}
+
+.formulario{
+    width: 30%;
+    height: 99vh;
+    margin-top: 2%;
+    background-color: rgb(209, 222, 222);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin-left: 20%;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.label-nombre{
+    font-size: 129%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    
+}
+
+.label-email{
+    font-size: 129%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    
+}
+
+.label-telefono{
+    font-size: 129%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    
+}
+
+.label-mensaje{
+    font-size: 129%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    
+}
+
+.label-imagen{
+    font-size: 129%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.label-checkbox{
+    font-size: 110%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.label-select{
+    font-size: 110%;
+    color: rgb(112, 119, 126);
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.nombre{
+    width: 90%;
+    height: 5vh;
+    border:none;
+    border-radius: 4px;
+    border-bottom: 2px grey solid;
+}
+
+.email{
+    width: 90%;
+    height: 5vh;
+    border:none;
+    border-radius: 4px;
+    border-bottom: 2px grey solid;
+}
+
+.telefono{
+    width: 90%;
+    height: 5vh;
+    border:none;
+    border-radius: 4px;
+    border-bottom: 2px grey solid;
+}
+
+.mensaje{
+    width: 90%;
+    height: 7vh;
+    border:none;
+    border-radius: 4px;
+    border-bottom: 2px grey solid;
+}
+
+.select{
+    width: 40%;
+    height: 5vh;
+    text-align: center;
+    margin-left: 4%;
+    border: none;
+    border-bottom: 2px grey solid;
+    border-radius: 4px;
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(58, 65, 65);
+}
+
+.boton-envio{
+    height: 7vh;
+    border: none;
+    border-bottom: 2px grey solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    font-size: 120%;
+    font-family: "Freeman", sans-serif;
+    color: rgb(92, 104, 104);
+    cursor: pointer;
+    
+}
+
+.fuente-footer{
+    width: 100%; 
+    color: white;
+    font-family: "Freeman", sans-serif;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(8, 135, 170);
+    width: 100%; 
+    box-sizing: border-box; 
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
 }
