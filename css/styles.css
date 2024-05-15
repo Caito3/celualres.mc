@@ -107,7 +107,7 @@
 }
 
 .sobre-nosotros {
-    background-image: url(../imagenes/fondo.jpg);
+    background-image: url(../imagenes/fondo.jpeg);
     background-size: cover;
     height: 89vh;
 
@@ -145,7 +145,7 @@
 
 .productos {
     height: 120vh;
-    background-image: url(../imagenes/fondo.jpg);
+    background-image: url(../imagenes/fondo.jpeg);
     background-position: left;
 }
 
@@ -229,7 +229,7 @@
 
 
 .contacto{
-    background-image: url(../imagenes/fondo.jpg);
+    background-image: url(../imagenes/fondo.jpeg);
     height: 137vh;
     
 }
@@ -250,7 +250,7 @@
 }
 
 .formulario{
-    width: 30%;
+    width: 50%;
     height: 99vh;
     margin-top: 2%;
     background-color: rgb(209, 222, 222);
@@ -258,7 +258,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 1%;
-    margin-left: 20%;
+    margin-left: 24%;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -276,7 +276,7 @@
     color: rgb(112, 119, 126);
     font-family: "Freeman", sans-serif;
     text-align: center;
-    
+    width: 100%;
 }
 
 .label-telefono{
@@ -320,35 +320,56 @@
 }
 
 .nombre{
-    width: 90%;
+    width: 92%;
     height: 5vh;
     border:none;
     border-radius: 4px;
     border-bottom: 2px grey solid;
+    cursor: pointer;
+}
+
+.nombre:focus{
+    outline: none;
 }
 
 .email{
-    width: 90%;
+    width: 92%;
     height: 5vh;
     border:none;
     border-radius: 4px;
     border-bottom: 2px grey solid;
+    cursor: pointer;
+}
+
+.email:focus{
+    outline: none;
 }
 
 .telefono{
-    width: 90%;
+    width: 92%;
     height: 5vh;
     border:none;
     border-radius: 4px;
     border-bottom: 2px grey solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.telefono:focus{
+    outline: none;
 }
 
 .mensaje{
-    width: 90%;
+    width: 92%;
     height: 7vh;
     border:none;
     border-radius: 4px;
     border-bottom: 2px grey solid;
+    cursor: pointer;
+}
+
+.mensaje:focus{
+    outline: none;
 }
 
 .select{
@@ -382,7 +403,7 @@
     color: white;
     font-family: "Freeman", sans-serif;
     text-align: center;
-
+}
 
 
 
@@ -395,14 +416,14 @@
 
 
 
- footer {
+footer {
     background-color: rgb(8, 135, 170);
     width: 100%; 
     box-sizing: border-box; 
     color: white;
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 15px;
+    
 }
 
 
@@ -470,6 +491,13 @@
     font-family: "Freeman", sans-serif;
 }
 
+
+.iframe{
+    width: 129%;
+    height: 35vh;
+    margin-left: -12%;
+}
+
 .grupo-1 {
     width: 90%;
 }
@@ -478,4 +506,157 @@
     padding-block: .5rem;
 }
 
+@media only screen and (max-width: 1024px){
 
+    .descripcion-completa{
+        justify-content: space-between;
+    }
+
+    .imagen-celulares{
+        width: 44%;
+        margin: 0;
+        height: 44vh;
+    }
+
+    .descripcion-nosotros{
+        width: 54%;
+        font-size: 147%;
+    }
+
+    .sobre-nosotros{
+        height: 65vh;
+    }
+
+    .productos{
+        height: 99vh;
+    }
+
+    .primer-producto-destacado{
+        width: 30%;
+        height: 70vh;
+    }
+
+    .segundo-producto-destacado{
+        width: 30%;
+        height: 70vh;
+    }
+
+    .tercer-producto-destacado{
+        width: 30%;
+        height: 70vh;
+    }
+
+    .iphone-doce{
+        height: 50vh;
+        min-width: 120%;
+        margin-left: -8%;
+    }
+
+    .samsung{
+        height: 50vh;
+        min-width: 120%;
+        margin-left: -8%;
+    }
+
+    .contacto{
+        height: 120vh;
+    }
+
+
+
+
+
+
+    .iframe{
+        height: 20vh;
+        width: 110%;
+        margin-left: -4%;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .navegacion{
+        width: 70%;
+        margin-left: 4%;
+    }
+
+    .header{
+        flex-wrap: nowrap;
+    }
+
+    .logos{
+        margin-left: 2.9%;
+    }
+
+    .frase{
+        text-align: center;
+    }
+
+    .imagen-celulares{
+        width: 45%;
+        margin: 0;
+        margin-top: 5%;
+    }
+
+    .sobre-nosotros{
+        height: 94vh;
+    }
+
+    .descripcion-completa{
+        justify-content: space-between;
+    }
+
+    .descripcion-nosotros{
+        font-size: 129%;
+        max-height: 84vh;
+        overflow:auto;
+        width: 54%;
+    }
+
+    .productos{
+        height: 105vh;
+    }
+
+    .primer-producto-destacado{
+        width: 30%;
+        height: 70vh;
+    }
+
+    .segundo-producto-destacado{
+        width: 30%;
+        height: 70vh;
+    }
+
+    .tercer-producto-destacado{
+        width: 30%;
+        height: 70vh;
+    }
+
+    .iphone-doce{
+        max-height: 50vh;
+        min-width: 110%;
+        margin-left: -4%;
+        
+    }
+
+    .samsung{
+        max-height: 50vh;
+        min-width: 120%;
+        margin-left: -8%;
+    }
+
+    .iframe{
+        width: 99%;
+        height: 25vh;
+        margin-left: 2.9%;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .header{
+        width: 100%;
+    }
+}
