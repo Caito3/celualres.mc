@@ -5,6 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html,body{
+    width: 100%;
+}
 .header {
     width: 100%;
     background-color: rgb(8, 135, 170);
@@ -57,16 +60,16 @@
 }
 
 .logo-facebook {
-    width: 42%;
+    width: 72%;
 }
 
 .logo-instagram {
-    width: 42%;
+    width: 72%;
 }
 
-
-
-
+.imagen-menu{
+    display: none;
+}
 
 .marca{
     background-image: url(../imagenes/celulares-fondo.jpg);
@@ -88,6 +91,30 @@
     flex-direction: column;
 }
 
+.home{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.nosotros{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.nav-productos{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.nav-contacto{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
 .titulo {
     color: rgb(220, 220, 221);
     font-size: 200%;
@@ -230,7 +257,7 @@
 
 .contacto{
     background-image: url(../imagenes/fondo.jpeg);
-    height: 137vh;
+    height: 149vh;
     
 }
 
@@ -251,14 +278,14 @@
 
 .formulario{
     width: 50%;
-    height: 99vh;
+    height: 112vh;
     margin-top: 2%;
     background-color: rgb(209, 222, 222);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 1%;
-    margin-left: 24%;
+    margin-left: 25%;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -308,7 +335,7 @@
     color: rgb(112, 119, 126);
     font-family: "Freeman", sans-serif;
     text-align: center;
-    margin-top: -4%;
+    margin-top: 0%;
 }
 
 .label-select{
@@ -506,6 +533,52 @@ footer {
     padding-block: .5rem;
 }
 
+
+.validarNombre{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarEmail{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarTelefono{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarMensaje{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarFoto{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    margin: 1%;
+    display: none;
+}
+
+.validarCheckbox{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    margin: 4%;
+    margin-top: 0.5%;
+    display: none;
+}
+
 @media only screen and (max-width: 1024px){
 
     .descripcion-completa{
@@ -516,6 +589,9 @@ footer {
         width: 44%;
         margin: 0;
         height: 44vh;
+    }
+    .imagen-menu{
+        display: none;
     }
 
     .descripcion-nosotros{
@@ -529,6 +605,14 @@ footer {
 
     .productos{
         height: 99vh;
+    }
+    
+    .logo-facebook{
+        width: 94%;
+    }
+
+    .logo-instagram{
+        width: 94%;
     }
 
     .primer-producto-destacado{
@@ -554,12 +638,12 @@ footer {
 
     .samsung{
         height: 50vh;
-        min-width: 120%;
+        min-width: 110%;
         margin-left: -8%;
     }
 
     .contacto{
-        height: 120vh;
+        height: 134vh;
     }
 
 
@@ -593,6 +677,10 @@ footer {
 
     .frase{
         text-align: center;
+    }
+
+    .imagen-menu{
+        display: none;
     }
 
     .imagen-celulares{
@@ -644,8 +732,8 @@ footer {
 
     .samsung{
         max-height: 50vh;
-        min-width: 120%;
-        margin-left: -8%;
+        min-width: 110%;
+        margin-left: -6%;
     }
 
     .iframe{
@@ -653,10 +741,251 @@ footer {
         height: 25vh;
         margin-left: 2.9%;
     }
+    .contacto{
+        height: 149vh;
+    }
 }
+
+
+
+
+
 
 @media only screen and (max-width:320px){
     .header{
         width: 100%;
+        justify-content: flex-start;
     }
+
+    .logo{
+        width: 90%;
+        margin-left: 7%;
+    }
+
+    .imagen-menu{
+        display: block;
+        width: 20%;
+        margin-left: 74%;
+    }
+
+    .logos{
+        display: none;
+    }
+
+    .navegacion{
+        display: none;
+    }
+
+    .titulo-nosotros{
+        font-size: 190%;
+    }
+    .descripcion-completa{
+        flex-direction: column;
+        height: 110vh;
+        justify-content: flex-start;
+    }
+    .descripcion-nosotros{
+        width: 98%;
+        text-align: center;
+        font-size: 110%;
+    }
+    .imagen-celulares{
+        width: 62%;
+        align-content: center;
+        margin-left: 20%;
+        height: 30vh;
+    }
+    .sobre-nosotros{
+        height: 130vh;
+    }
+    .productos{
+        height: 229vh;
+    }
+    .titulo-productos{
+        font-size: 220%;
+    }
+    .subtitulo-productos{
+        font-size: 160%;
+    }
+    .destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primer-producto-destacado {
+        width: 80%;
+    }
+    .segundo-producto-destacado{
+        width: 80%;
+        margin-top: 2%;
+    }
+    .tercer-producto-destacado{
+        width: 80%;
+        margin-top: 2%;
+    }
+    .contacto{
+        height: 170vh;
+        
+    }
+    .titulo{
+        font-size: 160%;
+    }
+    .subtitulo-contacto{
+        font-size: 129%;
+    }
+    .formulario{
+        width: 90%;
+        margin: 0;
+        margin-left: 5%;
+        margin-top: 9%;
+        height: 132vh;
+    }
+    .nombre{
+        width: 82%;
+    }
+    .email{
+        width: 82%;
+    }
+    .telefono{
+        width: 79%;
+        margin-left: -4%;
+    }
+    .mensaje{
+        width: 82%;
+        margin-left: -2%;
+    }
+
+    .select{
+        width: 60%;
+        margin-left: -2%;
+    }
+
+    .imagen-campo{
+        width: 80%;
+    }
+
+
+    .label-email{
+        width: 90%;
+        margin-left: 5.9%;
+    }
+    .label-nombre{
+        width: 90%;
+        margin-left: 5.9%;
+    }
+    .telefono-label{
+        width: 90%;
+        margin-left: 5.9%;
+    }
+    .mensaje-label{
+        width: 92%;
+        margin-left: 5.9%;
+    }
+    .label-checkbox{
+        margin-top: 2%;
+        width: 98%;
+        padding: 4%;
+        margin-left: 2%;
+    }
+
+.boton-envio{
+    width: 90%;
+    margin: auto;
+}
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: 0px;
+    
+}
+
+.label-select{
+    margin-top: 9%;
+}
+
+.label-imagen{
+    margin-top: 9%;
+}
+
+.label-nombre{
+    margin-top: 4%;
+}
+
+.label-checkbox{
+    margin-top: 4%;
+}
+
+#grupo-1{
+    margin: 0;
+    padding: 0;
+    gap:0;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+}
+.iframe{
+    margin-left: 4%;
+}
+.mapa{
+    grid-column: 1/4;
+}
+#info{
+    margin: 0;
+    margin-left: 52%;
+    margin-top: 9%;
+    width: 120%;
+}
+#datos{
+    display: none;
+}
+
+.validarNombre{
+    margin-top: 2%;
+}
+
+.validarEmail{
+    margin-top: 2%;
+}
+
+.validarTelefono{
+    margin-top: 2%;
+}
+
+.validarMensaje{
+    margin-top: 2%;
+}
+
+.validarFoto{
+    margin-top: 2%;
+}
+
+.menu-barra{
+    width: 70%;
+    background-color: rgb(122, 161, 195);
+    height: 190vh;
+    z-index: 1;
+    position: fixed;
+    margin-left: 30%;
+}
+.fondo-menu{
+    width: 30%;
+    height: 190vh;
+    position: fixed;
+    background-color: rgb(50, 61, 61);
+    opacity: 0.9;
+    z-index: 1;
+}
+.navegacion-celular{
+    position: fixed;
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+    flex-wrap: wrap;
+    font-size: 120%;
+    z-index: 2;
+    margin-top: 60%;
+    
+}
 }
