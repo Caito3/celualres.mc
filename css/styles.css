@@ -60,14 +60,12 @@ html,body{
 }
 
 .logo-facebook {
-    width: 42%;
+    width: 72%;
 }
 
 .logo-instagram {
-    width: 42%;
+    width: 72%;
 }
-
-
 
 .imagen-menu{
     display: none;
@@ -93,6 +91,30 @@ html,body{
     flex-direction: column;
 }
 
+.home{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.nosotros{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.nav-productos{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.nav-contacto{
+    text-decoration: none;
+    color: rgb(232, 232, 221);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
 .titulo {
     color: rgb(220, 220, 221);
     font-size: 200%;
@@ -235,7 +257,7 @@ html,body{
 
 .contacto{
     background-image: url(../imagenes/fondo.jpeg);
-    height: 137vh;
+    height: 149vh;
     
 }
 
@@ -256,14 +278,14 @@ html,body{
 
 .formulario{
     width: 50%;
-    height: 99vh;
+    height: 112vh;
     margin-top: 2%;
     background-color: rgb(209, 222, 222);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 1%;
-    margin-left: 24%;
+    margin-left: 25%;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -313,7 +335,7 @@ html,body{
     color: rgb(112, 119, 126);
     font-family: "Freeman", sans-serif;
     text-align: center;
-    margin-top: -4%;
+    margin-top: 0%;
 }
 
 .label-select{
@@ -511,6 +533,52 @@ footer {
     padding-block: .5rem;
 }
 
+
+.validarNombre{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarEmail{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarTelefono{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarMensaje{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    display: none;
+}
+
+.validarFoto{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    margin: 1%;
+    display: none;
+}
+
+.validarCheckbox{
+    font-family: "Freeman", sans-serif;
+    font-size: 90%;
+    color: rgb(29, 140, 237);
+    margin: 4%;
+    margin-top: 0.5%;
+    display: none;
+}
+
 @media only screen and (max-width: 1024px){
 
     .descripcion-completa{
@@ -538,6 +606,14 @@ footer {
     .productos{
         height: 99vh;
     }
+    
+    .logo-facebook{
+        width: 94%;
+    }
+
+    .logo-instagram{
+        width: 94%;
+    }
 
     .primer-producto-destacado{
         width: 30%;
@@ -562,12 +638,12 @@ footer {
 
     .samsung{
         height: 50vh;
-        min-width: 120%;
+        min-width: 110%;
         margin-left: -8%;
     }
 
     .contacto{
-        height: 120vh;
+        height: 134vh;
     }
 
 
@@ -666,7 +742,7 @@ footer {
         margin-left: 2.9%;
     }
     .contacto{
-        height: 140vh;
+        height: 149vh;
     }
 }
 
@@ -683,7 +759,7 @@ footer {
 
     .logo{
         width: 90%;
-        margin-left: 0%;
+        margin-left: 7%;
     }
 
     .imagen-menu{
@@ -748,7 +824,7 @@ footer {
         margin-top: 2%;
     }
     .contacto{
-        height: 144h;
+        height: 170vh;
         
     }
     .titulo{
@@ -761,8 +837,8 @@ footer {
         width: 90%;
         margin: 0;
         margin-left: 5%;
-        margin-top: 4%;
-        height: 110vh;
+        margin-top: 9%;
+        height: 132vh;
     }
     .nombre{
         width: 82%;
@@ -776,7 +852,7 @@ footer {
     }
     .mensaje{
         width: 82%;
-        margin-left: -4.9%;
+        margin-left: -2%;
     }
 
     .select{
@@ -824,6 +900,23 @@ footer {
     margin: 0px;
     
 }
+
+.label-select{
+    margin-top: 9%;
+}
+
+.label-imagen{
+    margin-top: 9%;
+}
+
+.label-nombre{
+    margin-top: 4%;
+}
+
+.label-checkbox{
+    margin-top: 4%;
+}
+
 #grupo-1{
     margin: 0;
     padding: 0;
@@ -845,5 +938,54 @@ footer {
 }
 #datos{
     display: none;
+}
+
+.validarNombre{
+    margin-top: 2%;
+}
+
+.validarEmail{
+    margin-top: 2%;
+}
+
+.validarTelefono{
+    margin-top: 2%;
+}
+
+.validarMensaje{
+    margin-top: 2%;
+}
+
+.validarFoto{
+    margin-top: 2%;
+}
+
+.menu-barra{
+    width: 70%;
+    background-color: rgb(122, 161, 195);
+    height: 190vh;
+    z-index: 1;
+    position: fixed;
+    margin-left: 30%;
+}
+.fondo-menu{
+    width: 30%;
+    height: 190vh;
+    position: fixed;
+    background-color: rgb(50, 61, 61);
+    opacity: 0.9;
+    z-index: 1;
+}
+.navegacion-celular{
+    position: fixed;
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+    flex-wrap: wrap;
+    font-size: 120%;
+    z-index: 2;
+    margin-top: 60%;
+    
 }
 }

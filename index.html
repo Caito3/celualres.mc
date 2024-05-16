@@ -18,21 +18,36 @@
 
 </head>
 <body>
-        <header class="header">
+        <header class="header" id="home">
             <div class="logo"><img src="./imagenes/logo.svg" alt="Logo de la empresa" class="imagen"></div>
-            <div class="menu"><img class="imagen-menu"  src="./imagenes/menu.png" alt="menu hamburguesa"></div>
-
+            
                 <ul class="navegacion">
-                <li class="item home">Home</li>
-                <li class="item nosotros">Sobre nosotros</li>
-                <li class="item productos-nav"> Productos</li>
-                <li class="item contactos"> Contacto </li>
-                </ul>
-
-            <div class="logos">
-                    <img src="./imagenes/instagram.png" alt="Logo de instagram" class="logo-instagram">
-                    <img src="./imagenes/facebook.png" alt="Logo de facebook" class="logo-facebook">
+                    <li class="item home" ><a href="#marca" class="home">Home</a></li>
+                    <li class="item nosotros"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
+                    <li class="item productos-nav"><a href="#productos" class="nav-productos">Productos</a></li>
+                    <li class="item contactos"><a href="#contacto" class="nav-contacto">Contacto</a></li>
+                    </ul>
+            
+            <div class="fondo-menu" id="fondo"> </div>
+            <div class="menu-barra" id="menu-barra">
+            <div class="menu"><img class="imagen-menu"  src="./imagenes/menu.png" alt="menu hamburguesa"></div>
+            
             </div>
+                <ul class="navegacion-celular" id="nav-celu">
+                <li class="item home" onclick="cerrar()"><a href="#home" class="home">Home</a></li>
+                <li class="item nosotros" onclick="cerrar()"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
+                <li class="item productos-nav" onclick="cerrar()"><a href="#productos" class="nav-productos">Productos</a></li>
+                <li class="item contactos" onclick="cerrar()"><a href="#contacto" class="nav-contacto">Contacto</a></li>
+                </ul>
+                </div>
+            <div class="logos">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./imagenes/instagram.png" alt="Logo de instagram" class="logo-instagram">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./imagenes/facebook.png" alt="Logo de facebook" class="logo-facebook">
+                </a>
+                </div>
         </header>
 
         <section class="marca">
@@ -43,7 +58,7 @@
             </div>
         </section>
 
-        <section class="sobre-nosotros">
+        <section class="sobre-nosotros" id="nosotros">
             <p class="titulo-nosotros">Sobre Nosotros</p>
             <div class="descripcion-completa">
             <p class="descripcion-nosotros">
@@ -60,7 +75,7 @@
             </div>
         </section>
 
-        <section class="productos">
+        <section class="productos" id="productos">
             
             <p class="titulo-productos">Nuestros productos </p>
             <p class="subtitulo-productos">Los mejores celulares para vos: </p>
@@ -85,7 +100,7 @@
         </section>
 
 
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <p class="titulo-contacto">Contacto</p>
             <p class="subtitulo-contacto">Haznos saber todas tus dudas y las responderemos lo antes posible</p>
             
@@ -94,26 +109,31 @@
                 <label for="nombre" class="label-nombre">
                     Nombre: 
                     <input type="text" id="nombre" class="nombre">
+                    <p class="validarNombre" id="validarNombre">Por favor, completa este campo</p>
                 </label>
                 
                 <label for="email" class="label-email">
                     E-Mail: 
                     <input type="email" name="email" id="email" class="email">
+                    <p class="validarEmail" id="validarEmail">Por favor, completa este campo </p>
                 </label>
                 
                 <label for="telefono" class="label-telefono">
                     Telefono:
                     <input type="number" name="telefono" id="telefono" class="telefono">
+                    <p class="validarTelefono" id="validarTelefono">Por favor, completa este campo</p>
                 </label>
 
                 <label for="mensaje" class="label-mensaje">
                     Mensaje:
                     <input type="text" name="mensaje" id="mensaje" class="mensaje">
+                    <p class="validarMensaje" id="validarMensaje">Por favor, completa este campo</p>
                 </label>
 
                 <label for="imagen-campo" class="label-imagen">
                     Subir imagen
                     <input type="file" name="imagen" id="imagen-campo" class="imagen-campo">
+                <p class="validarFoto" id="validarImagen">Por favor, sube una imagen</p>
                 </label>
 
                 <label for="select" class="label-select"> Selecciona tu provincia
@@ -126,10 +146,11 @@
                 </label>
 
                 <label for="checkbox" class="label-checkbox"> Acepto que me respondan a traves de mi E-mail
-                    <input type="checkbox" name="enviar-email" id="cheackbox" class="checkbox">
+                    <input type="checkbox" name="enviar-email" id="checkbox" class="checkbox">
+                    <p class="validarCheckbox" id="validarCheckbox">Por favor, este campo es obligatorio</p>
                 </label>
                 
-                <input type="submit" value="Enviar" class="boton-envio">
+                <input type="button" value="Enviar" class="boton-envio" onclick="Validar()">
             </form>
         </section>
 
