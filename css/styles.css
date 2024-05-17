@@ -103,6 +103,12 @@ html,body{
     font-family: "Freeman", sans-serif;
     font-weight: 400;
 }
+.menu-barra{
+    display: none;
+}
+.fondo{
+    display: none;
+}
 .nav-productos{
     text-decoration: none;
     color: rgb(232, 232, 221);
@@ -579,6 +585,10 @@ footer {
     display: none;
 }
 
+.navegacion-celular{
+    display: none;
+}
+
 @media only screen and (max-width: 1024px){
 
     .descripcion-completa{
@@ -710,28 +720,28 @@ footer {
 
     .primer-producto-destacado{
         width: 30%;
-        height: 70vh;
+        height: 62vh;
     }
 
     .segundo-producto-destacado{
         width: 30%;
-        height: 70vh;
+        height: 62vh;
     }
 
     .tercer-producto-destacado{
         width: 30%;
-        height: 70vh;
+        height: 62vh;
     }
 
     .iphone-doce{
-        max-height: 50vh;
+        max-height: 45vh;
         min-width: 110%;
         margin-left: -4%;
         
     }
 
     .samsung{
-        max-height: 50vh;
+        max-height: 45vh;
         min-width: 110%;
         margin-left: -6%;
     }
@@ -759,13 +769,13 @@ footer {
 
     .logo{
         width: 90%;
-        margin-left: 7%;
+        margin-left: -20%;
     }
 
     .imagen-menu{
         display: block;
         width: 20%;
-        margin-left: 74%;
+        margin-left: -2%;
     }
 
     .logos{
@@ -824,7 +834,7 @@ footer {
         margin-top: 2%;
     }
     .contacto{
-        height: 170vh;
+        height: 190vh;
         
     }
     .titulo{
@@ -838,7 +848,7 @@ footer {
         margin: 0;
         margin-left: 5%;
         margin-top: 9%;
-        height: 132vh;
+        height: 140vh;
     }
     .nombre{
         width: 82%;
@@ -951,7 +961,10 @@ footer {
 .validarTelefono{
     margin-top: 2%;
 }
-
+.item{
+    margin: 4%;
+    margin-top: 12%;
+}
 .validarMensaje{
     margin-top: 2%;
 }
@@ -962,11 +975,12 @@ footer {
 
 .menu-barra{
     width: 70%;
-    background-color: rgb(122, 161, 195);
+    background-color: rgb(57, 136, 205);
     height: 190vh;
     z-index: 1;
     position: fixed;
     margin-left: 30%;
+    display: none;
 }
 .fondo-menu{
     width: 30%;
@@ -975,6 +989,7 @@ footer {
     background-color: rgb(50, 61, 61);
     opacity: 0.9;
     z-index: 1;
+    display: none;
 }
 .navegacion-celular{
     position: fixed;
@@ -986,6 +1001,6 @@ footer {
     font-size: 120%;
     z-index: 2;
     margin-top: 60%;
-    
+    display: none;
 }
 }
