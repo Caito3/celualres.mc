@@ -61,3 +61,18 @@ function cerrar (){
     nav.style.display= "none"
     fondo.style.display= "none"
 }
+
+
+
+
+
+
+function abrirMenu(){
+    let menu = document.getElementById("nav-celu")
+    let fondo = document.getElementById("fondo")
+    let barra = document.getElementById("menu-barra")
+
+    menu.style.display= "block"
+    fondo.style.display= "block"
+    barra.style.display= "block"
+}
