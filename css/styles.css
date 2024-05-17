@@ -545,6 +545,7 @@ footer {
     font-size: 90%;
     color: rgb(29, 140, 237);
     display: none;
+    text-align: center;
 }
 
 .validarEmail{
@@ -552,6 +553,7 @@ footer {
     font-size: 90%;
     color: rgb(29, 140, 237);
     display: none;
+    text-align: center;
 }
 
 .validarTelefono{
@@ -559,6 +561,7 @@ footer {
     font-size: 90%;
     color: rgb(29, 140, 237);
     display: none;
+    text-align: center;
 }
 
 .validarMensaje{
@@ -566,6 +569,7 @@ footer {
     font-size: 90%;
     color: rgb(29, 140, 237);
     display: none;
+    text-align: center;
 }
 
 .validarFoto{
@@ -574,6 +578,7 @@ footer {
     color: rgb(29, 140, 237);
     margin: 1%;
     display: none;
+    text-align: center;
 }
 
 .validarCheckbox{
@@ -583,9 +588,14 @@ footer {
     margin: 4%;
     margin-top: 0.5%;
     display: none;
+    text-align: center;
 }
 
 .navegacion-celular{
+    display: none;
+}
+
+.fondo-menu{
     display: none;
 }
 

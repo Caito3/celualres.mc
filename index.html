@@ -33,13 +33,14 @@
             <div class="menu-barra" id="menu-barra">
             
             </div>
+
                 <ul class="navegacion-celular" id="nav-celu">
                 <li class="item home" onclick="cerrar()"><a href="#home" class="home">Home</a></li>
                 <li class="item nosotros" onclick="cerrar()"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
                 <li class="item productos-nav" onclick="cerrar()"><a href="#productos" class="nav-productos">Productos</a></li>
                 <li class="item contactos" onclick="cerrar()"><a href="#contacto" class="nav-contacto">Contacto</a></li>
                 </ul>
-            </div>
+            
             <div class="logos">
                 <a href="https://www.instagram.com/" target="_blank">
                     <img src="./imagenes/instagram.png" alt="Logo de instagram" class="logo-instagram">
@@ -47,7 +48,7 @@
                 <a href="https://www.facebook.com/" target="_blank">
                     <img src="./imagenes/facebook.png" alt="Logo de facebook" class="logo-facebook">
                 </a>
-                </div>
+            </div>
         </header>
 
         <section class="marca">
@@ -104,37 +105,42 @@
             <p class="titulo-contacto">Contacto</p>
             <p class="subtitulo-contacto">Haznos saber todas tus dudas y las responderemos lo antes posible</p>
             
-            <form action="" class="formulario">
+            <form class="formulario">
                 
                 <label for="nombre" class="label-nombre">
                     Nombre: 
                     <input type="text" id="nombre" class="nombre">
-                    <p class="validarNombre" id="validarNombre">Por favor, completa este campo</p>
                 </label>
+                <p class="validarNombre" id="validarNombre">Por favor, completa este campo</p>
+
                 
                 <label for="email" class="label-email">
                     E-Mail: 
                     <input type="email" name="email" id="email" class="email">
-                    <p class="validarEmail" id="validarEmail">Por favor, completa este campo </p>
                 </label>
+                <p class="validarEmail" id="validarEmail">Por favor, completa este campo </p>
+
                 
                 <label for="telefono" class="label-telefono">
                     Telefono:
                     <input type="number" name="telefono" id="telefono" class="telefono">
-                    <p class="validarTelefono" id="validarTelefono">Por favor, completa este campo</p>
                 </label>
+                <p class="validarTelefono" id="validarTelefono">Por favor, completa este campo</p>
+
 
                 <label for="mensaje" class="label-mensaje">
                     Mensaje:
                     <input type="text" name="mensaje" id="mensaje" class="mensaje">
-                    <p class="validarMensaje" id="validarMensaje">Por favor, completa este campo</p>
                 </label>
+                <p class="validarMensaje" id="validarMensaje">Por favor, completa este campo</p>
+
 
                 <label for="imagen-campo" class="label-imagen">
                     Subir imagen
                     <input type="file" name="imagen" id="imagen-campo" class="imagen-campo">
-                <p class="validarFoto" id="validarImagen">Por favor, sube una imagen</p>
                 </label>
+                <p class="validarFoto" id="validarImagen">Por favor, sube una imagen</p>
+
 
                 <label for="select" class="label-select"> Selecciona tu provincia
                     <select name="select" id="select" class="select">
@@ -147,8 +153,9 @@
 
                 <label for="checkbox" class="label-checkbox"> Acepto que me respondan a traves de mi E-mail
                     <input type="checkbox" name="enviar-email" id="checkbox" class="checkbox">
-                    <p class="validarCheckbox" id="validarCheckbox">Por favor, este campo es obligatorio</p>
                 </label>
+                <p class="validarCheckbox" id="validarCheckbox">Por favor, este campo es obligatorio</p>
+
                 
                 <input type="button" value="Enviar" class="boton-envio" onclick="Validar()">
             </form>
