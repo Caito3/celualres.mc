@@ -1,3 +1,4 @@
+// Funcion para validar los campos
 function Validar() {
     ValidarNombre()
     ValidarMail()
@@ -6,6 +7,8 @@ function Validar() {
     ValidarFoto()
     ValidarCheckbox()
 }
+
+// Validar el nombre
 function ValidarNombre(){
     let nombre = document.getElementById("nombre").value 
     let aviso = document.getElementById("validarNombre")
@@ -13,6 +16,8 @@ function ValidarNombre(){
         aviso.style.display= "block"
     }
 }
+
+// Validar email
 function ValidarMail(){
     let email = document.getElementById("email").value
     let aviso = document.getElementById("validarEmail")
@@ -21,6 +26,7 @@ function ValidarMail(){
     }
 }
 
+// Validar telefono
 function ValidarTelefono(){
     let telefono = document.getElementById("telefono").value
     let aviso = document.getElementById("validarTelefono")
@@ -29,6 +35,7 @@ function ValidarTelefono(){
     }
 }
 
+// Validar mensaje
 function ValidarMensaje(){
     let mensaje = document.getElementById("mensaje").value
     let aviso = document.getElementById("validarMensaje")
@@ -37,6 +44,7 @@ function ValidarMensaje(){
     }  
 }
 
+// Validar foto
 function ValidarFoto(){
     let foto = document.getElementById("imagen-campo").value
     let aviso = document.getElementById("validarImagen")
@@ -45,6 +53,7 @@ function ValidarFoto(){
     }
 }
 
+//Validar campo checkbox
 function ValidarCheckbox(){
     let checkbox = document.getElementById("checkbox").checked
     let aviso = document.getElementById("validarCheckbox")
@@ -53,6 +62,12 @@ function ValidarCheckbox(){
     }
 }
 
+
+
+
+
+
+// cerrar el menu hamburguesa
 function cerrar (){
     let menu = document.getElementById("menu-barra")
     let nav = document.getElementById("nav-celu")
@@ -62,11 +77,7 @@ function cerrar (){
     fondo.style.display= "none"
 }
 
-
-
-
-
-
+// abrir el menu hamburguesa
 function abrirMenu(){
     let menu = document.getElementById("nav-celu")
     let fondo = document.getElementById("fondo")
