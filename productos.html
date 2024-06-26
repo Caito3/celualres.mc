@@ -23,11 +23,14 @@
 
 </head>
 <body>
-
+        <!-- Header -->
     <header class="header" id="home">
+
+        <!-- Logo de la marca -->
         <div class="logo"><img src="./imagenes/logo.svg" alt="Logo de la empresa" class="imagen"></div>
         <img class="imagen-menu"  src="./imagenes/menu.png" alt="menu hamburguesa" onclick="abrirMenu()" >
 
+        <!-- Navegacion del menu -->
             <ul class="navegacion">
                 <li class="item home" ><a href="./index.html" class="home">Home</a></li>
                 <li class="item nosotros"><a href="./index.html#nosotros" class="nosotros">Sobre nosotros</a></li>
@@ -40,6 +43,7 @@
         
         </div>
 
+        <!-- Navegacion menu hamburguesa para celulares -->
             <ul class="navegacion-celular" id="nav-celu">
             <li class="item home" onclick="cerrar()"><a href="#home" class="home">Home</a></li>
             <li class="item nosotros" onclick="cerrar()"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
@@ -47,6 +51,7 @@
             <li class="item contactos" onclick="cerrar()"><a href="#contacto" class="nav-contacto">Contacto</a></li>
             </ul>
         
+        <!-- Logos de redes sociales -->
         <div class="logos">
             <a href="https://www.instagram.com/" target="_blank">
                 <img src="./imagenes/instagram.png" alt="Logo de instagram" class="logo-instagram">
@@ -57,11 +62,16 @@
         </div>
     </header>
 
+
+
+    <!-- Seccion de productos -->
     <section class="productos" id="productos">
-            
+        
+        <!-- titulos -->
         <p class="titulo-productos">Nuestros productos </p>
         <p class="subtitulo-productos">Los mejores celulares para vos: </p>
         
+        <!-- Celulares -->
         <div class="destacados">
         <div class="primer-producto-destacado">
             <img src="./imagenes/apple-iphone-12-pro-max.png" alt="iphone 12 pro max" class="iphone-doce">
@@ -81,7 +91,7 @@
         </div>
     </section>
 
-                <!-- Inicio del footer -->
+                <!--  Comienzo del Footer -->
 
                 <footer class="pie-pagina">
                     <div class="grupo-1" id="grupo-1">
@@ -104,8 +114,8 @@
                                 <p>www.mccelulares.com.ar</p>
                                 <p>Wp: +549 11 5555 5555</p>
                                 <p>Email: mccelulares@corp.com</p>
-                                <a href="https://www.instagram.com/" target="_blank"> <img src="imagenes/instagram.png" alt="inst" width="40"></a>
-                                <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="face" width="40"></a>
+                                <a href="https://www.instagram.com/" target="_blank"> <img src="imagenes/instagram.png" class="logo-instagram-footer" alt="inst" width="40"></a>
+                                <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" class="logo-facebook-footer" alt="face" width="40"></a>
                             </div>
                         </div>
                     </div>
@@ -113,8 +123,6 @@
                         <p class="nombre-footer"> 
                             &copy;2024 MC Celulares todos los derechos son reservados
                         </p>
-            
-                        <!-- Fin del footer -->
             
                     </div>
                 </footer>

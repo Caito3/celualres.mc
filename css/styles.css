@@ -68,6 +68,7 @@ html,body{
 .logo-facebook {
     width: 72%;
     transition: 0.2s;
+    margin-left: 4%;
 }
 
 .logo-facebook:hover{
