@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/conexion.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Montserrat:wght@500&family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header" id="home">
+        <div class="logo"><img src="./imagenes/logo.svg" alt="Logo de la empresa" class="imagen"></div>
+        <img class="imagen-menu"  src="./imagenes/menu.png" alt="menu hamburguesa" onclick="abrirMenu()" >
+
+            <ul class="navegacion">
+                <li class="item home" ><a href="./index.html" class="home">Home</a></li>
+                <li class="item nosotros"><a href="./index.html#nosotros" class="nosotros">Sobre nosotros</a></li>
+                <li class="item productos-nav"><a href="./productos.html" class="nav-productos">Productos</a></li>
+                <li class="item contactos"><a href="./index.html#contacto" class="nav-contacto">Contacto</a></li>
+                </ul>
+        
+        <div class="fondo-menu" id="fondo"> </div>
+        <div class="menu-barra" id="menu-barra">
+        
+        </div>
+
+            <ul class="navegacion-celular" id="nav-celu">
+            <li class="item home" onclick="cerrar()"><a href="#home" class="home">Home</a></li>
+            <li class="item nosotros" onclick="cerrar()"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
+            <li class="item productos-nav" onclick="cerrar()"><a href="#productos" class="nav-productos">Productos</a></li>
+            <li class="item contactos" onclick="cerrar()"><a href="#contacto" class="nav-contacto">Contacto</a></li>
+            </ul>
+        
+        <div class="logos">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./imagenes/instagram.png" alt="Logo de instagram" class="logo-instagram">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./imagenes/facebook.png" alt="Logo de facebook" class="logo-facebook">
+            </a>
+        </div>
+    </header>
+
+    <section class="productos" id="productos">
+            
+        <p class="titulo-productos">Nuestros productos </p>
+        <p class="subtitulo-productos">Los mejores celulares para vos: </p>
+        
+        <div class="destacados">
+        <div class="primer-producto-destacado">
+            <img src="./imagenes/apple-iphone-12-pro-max.png" alt="iphone 12 pro max" class="iphone-doce">
+            <p class="titulo-des">iPhone 12 Pro Max</p>
+            <p class="precio-des"> $800 </p>
+        </div>
+        <div class="segundo-producto-destacado">
+            <img src="./imagenes/s23.png" alt="samsung s23" class="samsung">
+            <p class="titulo-des">Samsung S23 FE Mint</p>
+            <p class="precio-des"> $900 </p>
+        </div>
+        <div class="tercer-producto-destacado">
+            <img src="./imagenes/apple-iphone-12.png" alt="samsung s23" class="samsung">
+            <p class="titulo-des">iPhone 12 64GbB</p>
+            <p class="precio-des"> $900 </p>
+        </div>
+        </div>
+    </section>
+
+                <!-- Inicio del footer -->
+
+                <footer class="pie-pagina">
+                    <div class="grupo-1" id="grupo-1">
+                        <div class="mapa">
+                            <h2>Como llegar</h2>
+                            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13267.404565329023!2d-60.65140130252673!3d-33.764512330789124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8321608a68901%3A0xe9a721ff46e3df47!2sManuel%20Ocampo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715783468325!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+            
+                        <div class="inf" id="datos">
+                            <h4>Información general</h4>
+                            <p>MC Celulares</p>
+                            <p>San Martin 1234</p>
+                            <p>Buenos Aires - Argentina</p>
+                        </div>
+            
+                        <div>
+                            <div class="inf" id="info">
+                                <h4>Escribinos a</h4>
+                                <p>www.mccelulares.com.ar</p>
+                                <p>Wp: +549 11 5555 5555</p>
+                                <p>Email: mccelulares@corp.com</p>
+                                <a href="https://www.instagram.com/" target="_blank"> <img src="imagenes/instagram.png" alt="inst" width="40"></a>
+                                <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="face" width="40"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grupo-2">
+                        <p class="nombre-footer"> 
+                            &copy;2024 MC Celulares todos los derechos son reservados
+                        </p>
+            
+                        <!-- Fin del footer -->
+            
+                    </div>
+                </footer>
+            
+
+</body>
+</html>

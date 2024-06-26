@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MC Celulares</title>
+
     <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,15 +19,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
+    <!-- Comienzo del header -->
         <header class="header" id="home">
             <div class="logo"><img src="./imagenes/logo.svg" alt="Logo de la empresa" class="imagen"></div>
             <img class="imagen-menu"  src="./imagenes/menu.png" alt="menu hamburguesa" onclick="abrirMenu()" >
 
+            <!-- Navegacion del header -->
                 <ul class="navegacion">
                     <li class="item home" ><a href="#marca" class="home">Home</a></li>
                     <li class="item nosotros"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
-                    <li class="item productos-nav"><a href="#productos" class="nav-productos">Productos</a></li>
+                    <li class="item productos-nav"><a href="./productos.html" class="nav-productos">Productos</a></li>
                     <li class="item contactos"><a href="#contacto" class="nav-contacto">Contacto</a></li>
                     </ul>
             
@@ -35,6 +39,7 @@
             
             </div>
 
+            <!-- Navegacion de menu hamburguesa para celular -->
                 <ul class="navegacion-celular" id="nav-celu">
                 <li class="item home" onclick="cerrar()"><a href="#home" class="home">Home</a></li>
                 <li class="item nosotros" onclick="cerrar()"><a href="#nosotros" class="nosotros">Sobre nosotros</a></li>
@@ -42,6 +47,7 @@
                 <li class="item contactos" onclick="cerrar()"><a href="#contacto" class="nav-contacto">Contacto</a></li>
                 </ul>
             
+            <!-- Seccion de logos de redes sociales -->
             <div class="logos">
                 <a href="https://www.instagram.com/" target="_blank">
                     <img src="./imagenes/instagram.png" alt="Logo de instagram" class="logo-instagram">
@@ -52,14 +58,15 @@
             </div>
         </header>
 
+        <!-- Sección de presentacion de la marca -->
         <section class="marca">
             <div class="nuestra-marca">
                 <p class="titulo">MC Celulares</p>
                 <p class="frase">Lo mejor en celulares para que te sientas seguro con algo tan necesario</p>
-                
             </div>
         </section>
 
+        <!-- Seccion "sobre nosotros" -->
         <section class="sobre-nosotros" id="nosotros">
             <p class="titulo-nosotros">Sobre Nosotros</p>
             <div class="descripcion-completa">
@@ -77,35 +84,14 @@
             </div>
         </section>
 
-        <section class="productos" id="productos">
-            
-            <p class="titulo-productos">Nuestros productos </p>
-            <p class="subtitulo-productos">Los mejores celulares para vos: </p>
-            
-            <div class="destacados">
-            <div class="primer-producto-destacado">
-                <img src="./imagenes/apple-iphone-12-pro-max.png" alt="iphone 12 pro max" class="iphone-doce">
-                <p class="titulo-des">iPhone 12 Pro Max</p>
-                <p class="precio-des"> $800 </p>
-            </div>
-            <div class="segundo-producto-destacado">
-                <img src="./imagenes/s23.png" alt="samsung s23" class="samsung">
-                <p class="titulo-des">Samsung S23 FE Mint</p>
-                <p class="precio-des"> $900 </p>
-            </div>
-            <div class="tercer-producto-destacado">
-                <img src="./imagenes/apple-iphone-12.png" alt="samsung s23" class="samsung">
-                <p class="titulo-des">iPhone 12 64GbB</p>
-                <p class="precio-des"> $900 </p>
-            </div>
-            </div>
-        </section>
-
-
+        <!-- Seccion de contacto -->
         <section class="contacto" id="contacto">
+
+            <!-- Encabezado -->
             <p class="titulo-contacto">Contacto</p>
             <p class="subtitulo-contacto">Haznos saber todas tus dudas y las responderemos lo antes posible</p>
             
+            <!-- Formulario de contacto -->
             <form class="formulario">
                 
                 <label for="nombre" class="label-nombre">
@@ -157,14 +143,16 @@
                 </label>
                 <p class="validarCheckbox" id="validarCheckbox">Por favor, este campo es obligatorio</p>
 
-                
+                <!-- Boton para enviar datos -->
                 <input type="button" value="Enviar" class="boton-envio" onclick="Validar()">
             </form>
         </section>
 
-            <!-- Inicio del footer -->
-
+            <!-- Comienzo del footer -->
+    
     <footer class="pie-pagina">
+
+        <!-- Mapa de Google maps con la ubicacion de la tienda -->
         <div class="grupo-1" id="grupo-1">
             <div class="mapa">
                 <h2>Como llegar</h2>
@@ -172,6 +160,7 @@
                 </iframe>
             </div>
 
+        <!-- Datos de la tienda -->
             <div class="inf" id="datos">
                 <h4>Información general</h4>
                 <p>MC Celulares</p>
@@ -179,6 +168,7 @@
                 <p>Buenos Aires - Argentina</p>
             </div>
 
+        <!-- datos de contacto de la tienda -->
             <div>
                 <div class="inf" id="info">
                     <h4>Escribinos a</h4>
