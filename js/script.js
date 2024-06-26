@@ -14,6 +14,8 @@ function ValidarNombre(){
     let aviso = document.getElementById("validarNombre")
     if (nombre == ""){
         aviso.style.display= "block"
+    }else if (nombre != ""){
+        aviso.style.display= "none"
     }
 }
 
@@ -23,7 +25,10 @@ function ValidarMail(){
     let aviso = document.getElementById("validarEmail")
     if (email== ""){
         aviso.style.display= "block"
+    } else if (email != ""){
+        aviso.style.display ="none"
     }
+
 }
 
 // Validar telefono
@@ -32,6 +37,8 @@ function ValidarTelefono(){
     let aviso = document.getElementById("validarTelefono")
     if (telefono == ""){
         aviso.style.display= "block"
+    } else if (telefono != ""){
+        aviso.style.display = "none"
     }
 }
 
@@ -41,7 +48,9 @@ function ValidarMensaje(){
     let aviso = document.getElementById("validarMensaje")
     if(mensaje == ""){
         aviso.style.display= "block"
-    }  
+    } else if (mensaje != ""){
+        aviso.style.display = "none"
+    }
 }
 
 // Validar foto
@@ -50,6 +59,8 @@ function ValidarFoto(){
     let aviso = document.getElementById("validarImagen")
     if(foto == ""){
         aviso.style.display= "block"
+    } else if (foto != ""){
+        aviso.style.display = "none"
     }
 }
 
@@ -59,13 +70,10 @@ function ValidarCheckbox(){
     let aviso = document.getElementById("validarCheckbox")
     if (checkbox == false){
         aviso.style.display= "block"
+    } else if (checkbox == true ){
+        aviso.style.display = "none"
     }
 }
-
-
-
-
-
 
 // cerrar el menu hamburguesa
 function cerrar (){

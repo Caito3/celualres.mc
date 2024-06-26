@@ -43,11 +43,12 @@ html,body{
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 1px 1px 4px black;
     transition: 0.4s;
 }
 
 .item:hover{
-    scale: 1.2;
+    scale: 1.12;
 }
 
 .imagen {
@@ -66,10 +67,20 @@ html,body{
 
 .logo-facebook {
     width: 72%;
+    transition: 0.2s;
+}
+
+.logo-facebook:hover{
+    scale: 1.1;
 }
 
 .logo-instagram {
     width: 72%;
+    transition: 0.2s ;
+}
+
+.logo-instagram:hover{
+    scale: 1.1;
 }
 
 .imagen-menu{
@@ -375,6 +386,7 @@ html,body{
     border-radius: 4px;
     border-bottom: 2px grey solid;
     cursor: pointer;
+    text-align: center;
 }
 
 .nombre:focus{
@@ -388,6 +400,7 @@ html,body{
     border-radius: 4px;
     border-bottom: 2px grey solid;
     cursor: pointer;
+    text-align: center;
 }
 
 .email:focus{
@@ -415,6 +428,7 @@ html,body{
     border-radius: 4px;
     border-bottom: 2px grey solid;
     cursor: pointer;
+    text-align: center;
 }
 
 .mensaje:focus{
@@ -475,6 +489,23 @@ footer {
     
 }
 
+.logo-facebook-footer{
+    transition: 0.4s;
+    margin-left: 2%;
+    margin-top: 2vh;
+}
+
+.logo-facebook-footer:hover{
+    scale: 1.12;
+}
+
+.logo-instagram-footer{
+    transition: 0.4s;
+}
+
+.logo-instagram-footer:hover{
+    scale: 1.12;
+}
 
 .pie-pagina {
     background-color: rgb(8, 135, 170);
@@ -488,6 +519,7 @@ footer {
     grid-gap: 50px;
     padding: 1rem 0;
     color: white;
+    
 }
 
 .pie-pagina .grupo-1 .mapa {
