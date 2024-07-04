@@ -225,36 +225,14 @@ html,body{
     height: 50vh;
 }
 
-.primer-producto-destacado {
+.producto {
     width: 25%;
     height: 74vh;
-    background-color: rgb(200, 219, 219);
+    background-color: rgb(202, 215, 215);
     border-radius: 20px;
 }
 
-.primer-producto-destacado:hover{
-    scale: 1.02;
-}
-
-.segundo-producto-destacado {
-    width: 25%;
-    height: 74vh;
-    background-color: rgb(200, 219, 219);
-    border-radius: 20px;
-}
-
-.segundo-producto-destacado:hover{
-    scale: 1.02;
-}
-
-.tercer-producto-destacado{
-    width: 25%;
-    height: 74vh;
-    background-color: rgb(200, 219, 219);
-    border-radius: 20px;
-}
-
-.tercer-producto-destacado:hover{
+.producto:hover{
     scale: 1.02;
 }
 
@@ -275,7 +253,7 @@ html,body{
 .titulo-des {
     font-size: 160%;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
 }
@@ -283,7 +261,7 @@ html,body{
 .precio-des {
     font-size: 160%;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
 }
