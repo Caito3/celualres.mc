@@ -1,45 +1,68 @@
 
-let url = 'https://grupo-13-node-js-backend-comisi-n-24131.vercel.app/products'
+function authBackend(email, password){
 
-const myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
+    const AuthHeaders = new Headers();
+    AuthHeaders.append("Content-Type", "application/json");
 
-const raw = JSON.stringify({
-    "email": "mvazquezmultimedia@gmail.com",
-    "password": "admin123"
-});
+    const raw = JSON.stringify({
+        "email": email,
+        "password": password
+    });
 
-const requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-    redirect: "follow"
-};
+    const requestOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: raw,
+        redirect: "follow"
+    };
 
-fetch("https://grupo-13-node-js-backend-comisi-n-24131.vercel.app/auth/register", requestOptions)
-    .then((response) => response.json())
-    .then((result) => autenticar(result))
-    .catch((error) => console.error(error));
-
-    
-    function autenticar(result){
-    
-        const myHeadersProducts = new Headers();
-        let token = result.token
-        console.log(token)
-
-        myHeadersProducts.append("Authorization", "Bearer" + token );
-
-        console.log(myHeadersProducts)
-const requestOptions = {
-    headers: myHeadersProducts,
-    redirect: "follow",
-    mode : "no-cors"
-};
-
-fetch("https://grupo-13-node-js-backend-comisi-n-24131.vercel.app/products", requestOptions)
-    .then((response) => response.text())
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
-
+    // let url = "http://localhost:3000/auth/register";
+    let url = "https://grupo-13-node-js-backend-comisi-n-24131.vercel.app/auth/register";
+    fetch(url, requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+                let token = JSON.parse(result).token
+                // console.log(token)
+                if (result){
+                    let products = getProducts(token)
+                    if(products){
+                        return products;
+                    }
+                }
+        })
+        .catch((error) => console.error(error));
 }
+
+
+
+
+function getProducts(token){
+
+        if(token){
+            
+            let url = "https://grupo-13-node-js-backend-comisi-n-24131.vercel.app/products";
+            // let url = "http://localhost:3000/products";
+
+
+            const myHeaders = new Headers();
+            myHeaders.append("Authorization",  "Bearer " + token);
+
+            const requestOptions = {
+                method: "GET",
+                headers: myHeaders,
+                redirect: "follow"
+            };
+
+            fetch(url, requestOptions)
+            .then((response) => response.text())
+            .then((result) => console.log(result))
+            .catch((error) => console.error(error));
+        }    
+}
+
+email = "cualquiercosa@gmail.com";
+password = "cualquiercosa123";
+
+authBackend(email, password);
