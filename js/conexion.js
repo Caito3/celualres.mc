@@ -1,5 +1,5 @@
 
-function authBackend(email, password){
+async function authBackend(email, password){
 
     const AuthHeaders = new Headers();
     AuthHeaders.append("Content-Type", "application/json");
@@ -20,7 +20,7 @@ function authBackend(email, password){
 
     // let url = "http://localhost:3000/auth/register";
     let url = "https://grupo-13-node-js-backend-comisi-n-24131.vercel.app/auth/register";
-    fetch(url, requestOptions)
+    const response = await fetch(url, requestOptions)
         .then((response) => response.text())
         .then((result) => {
                 let token = JSON.parse(result).token
@@ -38,7 +38,7 @@ function authBackend(email, password){
 
 
 
-function getProducts(token){
+async function getProducts(token){
 
         if(token){
             
@@ -55,10 +55,15 @@ function getProducts(token){
                 redirect: "follow"
             };
 
-            fetch(url, requestOptions)
-            .then((response) => response.text())
-            .then((result) => console.log(result))
-            .catch((error) => console.error(error));
+            const response = await fetch(url, requestOptions)
+                .then((response) => response.text())
+                .then((result) => {
+                    if(result){
+                        console.log(result)
+                    }
+                    
+                })
+                .catch((error) => console.error(error));
         }    
 }
 
