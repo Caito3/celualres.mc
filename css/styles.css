@@ -901,6 +901,88 @@ footer {
     }
 }
 
+@media only screen and (max-width:440px){
+
+    .header{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .logo{
+        width: 90%;
+        margin-left: -14.8%;
+    }
+
+    .imagen-menu{
+        display: block;
+        width: 15.5%;
+        margin-left: 4%;
+    }
+
+    .logos{
+        display: none;
+    }
+
+    .navegacion{
+        display: none;
+    }
+
+    .contacto{
+        height: 160vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pie-pagina .grupo-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    margin-left: 16%;
+}
+
+    .productos{
+    justify-content: center;
+    height: 1090vh;
+}
+
+    .producto{
+    width: 82%;
+    height: 84vh;
+}
+
+    .imagen-producto{
+    height: 38vh;
+    width: 44%;
+}
+
+    .boton-producto{
+    height: 5.5vh;
+}
+
+    .titulo-productos{
+    font-size: 240%;
+}
+
+    .subtitulo-productos{
+    font-size: 140%;
+}
+
+    .titulo-contacto{
+        margin-top: 4vh;
+    }
+
+    .formulario{
+    width: 80%;
+    margin: auto ;
+
+}
+
+}
+
 @media only screen and (max-width:380px){
 
     .header{
@@ -939,7 +1021,7 @@ footer {
 
 .productos{
     justify-content: center;
-    height: 1080vh;
+    height: 1090vh;
 }
 
 .producto{
@@ -979,7 +1061,7 @@ footer {
     .imagen-menu{
         display: block;
         width: 20%;
-        margin-left: 4%;
+        margin-left: 2%;
     }
 
     .logos{
@@ -1119,12 +1201,12 @@ footer {
         margin-left: 2%;
     }
 
-.boton-envio{
+    .boton-envio{
     width: 90%;
     margin: auto;
 }
 
-.pie-pagina{
+    .pie-pagina{
     display: flex;
     flex-direction: column;
     height: 90vh;
@@ -1132,69 +1214,69 @@ footer {
     
 }
 
-.label-select{
+    .label-select{
     margin-top: 9%;
 }
 
-.label-imagen{
+    .label-imagen{
     margin-top: 9%;
 }
 
-.label-nombre{
+    .label-nombre{
     margin-top: 4%;
 }
 
-.label-checkbox{
+    .label-checkbox{
     margin-top: 4%;
 }
 
-#grupo-1{
+    #grupo-1{
     margin: 0;
     padding: 0;
     gap:0;
-    justify-content: space-between;
-    grid-template-columns: 50% 50%;
+    
+
 }
-.iframe{
+    .iframe{
     margin-left: 4%;
 }
-.mapa{
+    .mapa{
     grid-column: 1/4;
 }
-#info{
+    #info{
     margin: 0;
-    margin-left: 52%;
+    margin-left: 0%;
     margin-top: 9%;
     width: 120%;
 }
-#datos{
+    #datos{
     display: none;
 }
 
-.validarNombre{
+    .validarNombre{
     margin-top: 2%;
 }
 
-.validarEmail{
+    .validarEmail{
     margin-top: 2%;
 }
 
-.validarTelefono{
+    .validarTelefono{
     margin-top: 2%;
 }
-.item{
+    .item{
     margin: 4%;
     margin-top: 12%;
 }
-.validarMensaje{
+    .validarMensaje{
     margin-top: 2%;
 }
 
-.validarFoto{
+    .validarFoto{
     margin-top: 2%;
 }
 
-.menu-barra{
+    .menu-barra{
     width: 70%;
     background-color: rgb(57, 136, 205);
     height: 190vh;
@@ -1203,7 +1285,7 @@ footer {
     margin-left: 30%;
     display: none;
 }
-.fondo-menu{
+    .fondo-menu{
     width: 30%;
     height: 190vh;
     position: fixed;
@@ -1212,7 +1294,7 @@ footer {
     z-index: 1;
     display: none;
 }
-.navegacion-celular{
+    .navegacion-celular{
     position: fixed;
     width: 49%;
     display: flex;
