@@ -16,27 +16,28 @@ html,body{
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
+    border-bottom: 4px solid rgb(34, 164, 199);
 }
 
 .logo {
-    width: 8%;
-    height: 14vh;
+    width: 15%;
+    height: 18vh;
     margin: 1%;
-    margin-top: 0.42%;
+    margin-top: -0.5%;
     margin-left: 5%;
+    
 }
 
 .navegacion {
     width: 49%;
     display: flex;
     justify-content: space-between;
-    margin-left: 10.5%;
+    margin-left: 4.5%;
     flex-wrap: wrap;
-
 }
 
 .item {
-    margin: 2%;
+    margin: 4%;
     list-style-type: none;
     font-size: 150%;
     color: rgb(232, 232, 221);
@@ -45,6 +46,7 @@ html,body{
     font-style: normal;
     text-shadow: 1px 1px 4px black;
     transition: 0.4s;
+    margin-top: 2%;
 }
 
 .item:hover{
@@ -52,17 +54,20 @@ html,body{
 }
 
 .imagen {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     border-radius: 9px;
-
+    cursor: pointer;
+    margin-top: 1.8vh;
+    margin-left: -4%;
 }
 
 .logos {
     width: 7%;
-    margin-left: 10.5%;
+    margin-left: 12%;
     display: flex;
     justify-content: space-between;
+    margin-top: -0.7%;
 }
 
 .logo-facebook {
@@ -193,10 +198,19 @@ html,body{
     border-radius: 20px;
 }
 
-.productos {
-    height: 120vh;
+
+
+.titulos{
     background-image: url(../imagenes/fondo.jpeg);
     background-position: left;
+}
+
+.productos {
+    height: 380vh;
+    background-image: url(../imagenes/fondo.jpeg);
+    background-position: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .titulo-productos {
@@ -226,46 +240,65 @@ html,body{
 }
 
 .producto {
-    width: 25%;
+    width: 24%;
     height: 74vh;
-    background-color: rgb(202, 215, 215);
+    background-color: rgb(212, 217, 217);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    box-shadow: 0px 4px 5px 2px rgb(170, 171, 171);
+    transition: 0.2s;
 }
 
 .producto:hover{
     scale: 1.02;
 }
 
-.iphone-doce {
-    width: 100%;
-    height: 58vh;
-    border-radius: 49px;
-    padding: 9%;
-}
-
-.samsung {
-    width: 100%;
-    height: 58vh;
-    border-radius: 49px;
-    padding: 9%;
+.imagen-producto{
+    height: 38vh;
+    width: 58%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 0;
 }
 
 .titulo-des {
-    font-size: 160%;
+    font-size: 150%;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 8%;
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
 }
 
 .precio-des {
-    font-size: 160%;
+    font-size: 150%;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 2%;
     font-family: "Freeman", sans-serif;
     color: rgb(78, 84, 91);
 }
 
+.boton-producto{
+    width: 40%;
+    margin: auto;
+    margin-top: 2.5vh;
+    background-color: rgb(118, 123, 130);
+    height: 6vh;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 112%;
+    font-family:"Freeman", sans-serif;
+    box-shadow: 0px 2.2px 4px 1.2px rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+.boton-producto:hover{
+    background-color: rgb(50, 101, 212);
+}
 
 .contacto{
     background-image: url(../imagenes/fondo.jpeg);
@@ -340,6 +373,7 @@ html,body{
     font-family: "Freeman", sans-serif;
     text-align: center;
     margin-top: 4%;
+    cursor: pointer;
 }
 
 .label-checkbox{
@@ -348,6 +382,7 @@ html,body{
     font-family: "Freeman", sans-serif;
     text-align: center;
     margin-top: 0%;
+    cursor: pointer;
 }
 
 .label-select{
@@ -425,6 +460,7 @@ html,body{
     font-family: "Freeman", sans-serif;
     font-size: 90%;
     color: rgb(58, 65, 65);
+    cursor: pointer;
 }
 
 .boton-envio{
@@ -437,7 +473,10 @@ html,body{
     font-family: "Freeman", sans-serif;
     color: rgb(92, 104, 104);
     cursor: pointer;
-    
+    transition: 0.4s;
+}
+.boton-envio:hover{
+    background-color: rgb(228, 231, 231);
 }
 
 .fuente-footer{
@@ -488,6 +527,7 @@ footer {
 
 .pie-pagina {
     background-color: rgb(8, 135, 170);
+    
 }
 
 .pie-pagina .grupo-1 {

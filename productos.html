@@ -27,7 +27,7 @@
     <header class="header" id="home">
 
         <!-- Logo de la marca -->
-        <div class="logo"><img src="./imagenes/logo.svg" alt="Logo de la empresa" class="imagen"></div>
+        <div class="logo" onclick="logo()"><img src="./imagenes/logo.svg" alt="Logo de la empresa" class="imagen"></div>
         <img class="imagen-menu"  src="./imagenes/menu.png" alt="menu hamburguesa" onclick="abrirMenu()" >
 
         <!-- Navegacion del menu -->
@@ -64,17 +64,19 @@
 
 
 
+    <div class="titulos">
+    <!-- titulos -->
+    <p class="titulo-productos">Nuestros productos </p>
+    <p class="subtitulo-productos">Los mejores celulares para vos: </p>
+    </div>
+
     <!-- Seccion de productos -->
     <section class="productos" id="productos">
         
-        <!-- titulos -->
-        <p class="titulo-productos">Nuestros productos </p>
-        <p class="subtitulo-productos">Los mejores celulares para vos: </p>
-        
         <!-- Celulares -->
-        <div class="destacados">
+        <div class="destacados" id="productos">
         <div class="producto">
-            <img src="./imagenes/apple-iphone-12-pro-max.png" alt="iphone 12 pro max" class="iphone-doce">
+            <img src="./imagenes/apple-iphone-12-pro-max.png" alt="iphone 12 pro max" class="imagen">
             <p class="titulo-des">iPhone 12 Pro Max</p>
             <p class="precio-des"> $800 </p>
         </div>
