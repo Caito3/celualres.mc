@@ -75,6 +75,12 @@ function ValidarCheckbox(){
     }
 }
 
+// llevar desde el logo a home
+
+function logo () {
+    location.href="./index.html"
+}
+
 // cerrar el menu hamburguesa
 function cerrar (){
     let menu = document.getElementById("menu-barra")

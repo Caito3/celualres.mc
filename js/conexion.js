@@ -24,7 +24,7 @@ async function authBackend(email, password){
         .then((response) => response.text())
         .then((result) => {
                 let token = JSON.parse(result).token
-                // console.log(token)
+                console.log(token)
                 if (result){
                     let products = getProducts(token)
                     if(products){
@@ -56,12 +56,12 @@ async function getProducts(token){
             };
 
             const response = await fetch(url, requestOptions)
-                .then((response) => response.text())
+                .then((response) => response.json())
                 .then((result) => {
                     if(result){
                         console.log(result)
                     }
-                    
+                    mostrarProductos(result)
                 })
                 .catch((error) => console.error(error));
         }    
@@ -71,3 +71,40 @@ email = "cualquiercosa@gmail.com";
 password = "cualquiercosa123";
 
 authBackend(email, password);
+
+function mostrarProductos(result){
+
+    var productos = document.getElementById("productos")
+    
+    console.log(result)
+    var foto = [
+        './imagenes/Iphone11.png',
+        './imagenes/Iphone11Pro.png',
+        './imagenes/Iphone12.png',
+        './imagenes/Iphone12Pro.png',
+        './imagenes/s24.png',
+        './imagenes/s22.png',
+        './imagenes/motog42.png',
+        './imagenes/s20.png',
+        './imagenes/Iphone15.png',
+        './imagenes/Iphone15Pro.png',
+        './imagenes/s21.png',
+        './imagenes/s22.png'
+    ]
+
+        var agregarProductos = result.map(function(info, num){
+            
+            return  '<div class="producto">'
+                        +`<img id="imagen" src=${foto[num]} class="imagen-producto" />`
+                        +'<p class="titulo-des">'+info.name+'<p>'
+                        +'<p class="precio-des">'+info.price+'</p>'
+                        +'<button class="boton-producto"> Ver mas </button>'
+                    +'</div>';
+            
+        }).join('')
+
+    productos.innerHTML= agregarProductos;
+    
+    
+}
+
