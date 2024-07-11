@@ -1,4 +1,6 @@
 
+//autenticacion para obtener los datos
+
 async function authBackend(email, password){
 
     const AuthHeaders = new Headers();
@@ -72,11 +74,14 @@ password = "cualquiercosa123";
 
 authBackend(email, password);
 
+//funcion para mostrar los productos
+
 function mostrarProductos(result){
 
+    //obtenemos el section donde se incluiran los productos
     var productos = document.getElementById("productos")
     
-    console.log(result)
+    //imagenes
     var foto = [
         './imagenes/Iphone11.png',
         './imagenes/Iphone11Pro.png',
@@ -92,19 +97,21 @@ function mostrarProductos(result){
         './imagenes/s22.png'
     ]
 
+    // recorremos los productos y le aplicamos una funcion a cada uno de ellos
         var agregarProductos = result.map(function(info, num){
-            
+
+            //creamos el producto
             return  '<div class="producto">'
                         +`<img id="imagen" src=${foto[num]} class="imagen-producto" />`
-                        +'<p class="titulo-des">'+info.name+'<p>'
-                        +'<p class="precio-des">'+info.price+'</p>'
+                        +'<p class="titulo-prod">'+info.name+'<p>'
+                        +'<p class="desc-prod">'+info.description+'</p>'
+                        +'<p class="precio-prod">$'+info.price+'</p>'
                         +'<button class="boton-producto"> Ver mas </button>'
                     +'</div>';
             
         }).join('')
-
+    //insertamos el producto en el section
     productos.innerHTML= agregarProductos;
-    
     
 }
 

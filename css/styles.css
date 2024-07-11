@@ -241,7 +241,7 @@ html,body{
 
 .producto {
     width: 24%;
-    height: 74vh;
+    height: 78vh;
     background-color: rgb(212, 217, 217);
     border-radius: 20px;
     display: flex;
@@ -256,14 +256,14 @@ html,body{
 }
 
 .imagen-producto{
-    height: 38vh;
+    height: 34vh;
     width: 58%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 0;
 }
 
-.titulo-des {
+.titulo-prod {
     font-size: 150%;
     text-align: center;
     margin-top: 8%;
@@ -271,7 +271,15 @@ html,body{
     color: rgb(78, 84, 91);
 }
 
-.precio-des {
+.precio-prod {
+    font-size: 150%;
+    text-align: center;
+    margin-top: 2%;
+    font-family: "Freeman", sans-serif;
+    color: rgb(78, 84, 91);
+}
+
+.desc-prod{
     font-size: 150%;
     text-align: center;
     margin-top: 2%;
@@ -681,6 +689,11 @@ footer {
         display: none;
     }
 
+    .navegacion{
+        width: 58%;
+        margin-left: 2.8%;
+    }
+
     .descripcion-nosotros{
         width: 54%;
         font-size: 147%;
@@ -691,9 +704,35 @@ footer {
     }
 
     .productos{
-        height: 99vh;
+        height: 284vh;
+        align-content: flex-start;
     }
-    
+
+    .imagen-producto{
+        height: 30vh;
+        width: 72%;
+    }
+
+    .producto{
+        height: 62vh;
+        width: 25.2%;
+    }
+
+    .desc-prod{
+        margin-top: 1vh;
+        width: 92%;
+        margin: auto;
+    }
+
+
+    .boton-producto{
+        width: 60%;
+        height: 4vh;
+    }
+
+    .logos{
+        margin-left: 5.5%;
+    }
     .logo-facebook{
         width: 94%;
     }
@@ -750,16 +789,35 @@ footer {
 @media only screen and (max-width: 768px){
 
     .navegacion{
-        width: 70%;
-        margin-left: 4%;
+        width: 98%;
+        margin-left: -7%;
+        justify-content: flex-start;
+        margin-top: 2vh;
     }
 
     .header{
         flex-wrap: nowrap;
     }
 
+    .imagen{
+        width: 70%;
+    }
+
+
+    .logo{
+        margin-left: 4%;
+        margin-top: 2vh;
+    }
+
     .logos{
-        margin-left: 2.9%;
+        margin-left: -17.4%;
+        margin-top: 0vh;
+        flex-direction: column;
+        width: 4.5%;
+    }
+
+    .logo-facebook{
+    margin-top: 0.8vh;
     }
 
     .frase{
@@ -792,7 +850,17 @@ footer {
     }
 
     .productos{
-        height: 105vh;
+        height: 488vh;
+    }
+
+    .producto{
+        width: 42%;
+        height: 70vh;
+    }
+
+    .imagen-producto{
+        margin-top: 2vh;
+        width: 58%;
     }
 
     .primer-producto-destacado{
@@ -846,13 +914,13 @@ footer {
 
     .logo{
         width: 90%;
-        margin-left: -20%;
+        margin-left: -14.8%;
     }
 
     .imagen-menu{
         display: block;
         width: 20%;
-        margin-left: -2%;
+        margin-left: 4%;
     }
 
     .logos{
@@ -885,9 +953,26 @@ footer {
     .sobre-nosotros{
         height: 130vh;
     }
-    .productos{
-        height: 229vh;
+
+    .imagen-producto{
+        height: 34vh;
     }
+
+    .productos{
+        height: 1040vh;
+        justify-content: center;
+    }
+
+    .producto{
+        width: 74%;
+        height: 80vh;
+    }
+
+    .boton-producto{
+        margin-top: 0.8vh;
+        height: 5.5vh;
+    }
+
     .titulo-productos{
         font-size: 220%;
     }
