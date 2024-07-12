@@ -947,8 +947,13 @@ footer {
     margin-left: 16%;
 }
 
+.pie-pagina .grupo-1 h2{
+    margin-left: 4%;
+}
+
 .mapa{
     margin: auto;
+    margin-left: -13.2%;
 }
 
     .productos{
@@ -1059,8 +1064,13 @@ footer {
     margin-left: 10.5%;
 }
 
+.pie-pagina .grupo-1 h2{
+    margin-left: 2.8%;
+}
+
 .mapa{
     margin: auto;
+    margin-left: -10%;
 }
 
 .productos{
@@ -1336,8 +1346,8 @@ footer {
     margin: auto;
 }
 
-.pie-pagina .grupo-1 h2{
-    margin-left: 9%;
+    .pie-pagina .grupo-1 h2{
+    margin-left: 10%;
 }
 
 
