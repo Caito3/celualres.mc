@@ -494,16 +494,11 @@ html,body{
     text-align: center;
 }
 
-
-
 .footer-content ul li{
     list-style-type: none;
     text-decoration:none !important;
 
 }
-
-
-
 
 footer {
     background-color: rgb(8, 135, 170);
@@ -555,8 +550,9 @@ footer {
 
 .pie-pagina .grupo-1 h2 {
     font-family: "Freeman", sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 4%;
     text-align: center;
+    margin-left: 4%;
 }
 
 .pie-pagina .grupo-1 p {
@@ -850,17 +846,19 @@ footer {
     }
 
     .productos{
-        height: 488vh;
+        height: 502vh;
     }
 
     .producto{
         width: 42%;
-        height: 70vh;
+        height: 74vh;
     }
 
     .imagen-producto{
         margin-top: 2vh;
-        width: 58%;
+        height: 37vh;
+        width: 64%;
+        object-fit: scale-down;
     }
 
     .primer-producto-destacado{
@@ -964,8 +962,9 @@ footer {
 }
 
     .imagen-producto{
-    height: 32vh;
-    width: 40%;
+        height: 35vh;
+        width: 60%;
+        object-fit: scale-down;
 }
 
     .boton-producto{
@@ -1049,6 +1048,7 @@ footer {
         display: none;
     }
 
+
     .pie-pagina .grupo-1{
     display: flex;
     flex-direction: column;
@@ -1074,8 +1074,9 @@ footer {
 }
 
 .imagen-producto{
-    height: 30vh;
-    width: 38%;
+    height: 35vh;
+    width: 60%;
+    object-fit: scale-down;
 }
 
 .boton-producto{
@@ -1148,6 +1149,7 @@ footer {
         margin-left: -4%;
     }
 
+
     .logos{
         display: none;
     }
@@ -1180,8 +1182,9 @@ footer {
     }
 
     .imagen-producto{
-        height: 30vh;
-        width: 50%;
+        height: 35vh;
+        width: 60%;
+        object-fit: scale-down;
     }
 
     .productos{
@@ -1322,15 +1325,22 @@ footer {
     margin: 0;
     padding: 0;
     gap:0;
-    
-
 }
+
+
     .iframe{
     margin-left: 4%;
 }
+
     .mapa{
     margin: auto;
 }
+
+.pie-pagina .grupo-1 h2{
+    margin-left: 9%;
+}
+
+
     #info{
     margin: 0;
     margin-left: 0%;
