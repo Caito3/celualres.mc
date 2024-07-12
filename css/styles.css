@@ -917,6 +917,10 @@ footer {
         margin-left: -4%;
     }
 
+    .imagen-celulares{
+        object-fit: cover;
+    }
+
     .logos{
         display: none;
     }
@@ -1027,7 +1031,7 @@ footer {
 
 }
 
-@media only screen and (max-width:380px){
+@media only screen and (max-width:400px){
 
     .header{
         width: 100%;
@@ -1043,6 +1047,10 @@ footer {
         display: block;
         width: 20%;
         margin-left: -8%;
+    }
+
+    .imagen-celulares{
+        object-fit: cover;
     }
 
     .logos{
