@@ -1130,13 +1130,13 @@ footer {
 
     .logo{
         width: 90%;
-        margin-left: -14.8%;
+        margin-left: -10%;
     }
 
     .imagen-menu{
         display: block;
         width: 20%;
-        margin-left: -8%;
+        margin-left: -4%;
     }
 
     .logos{
@@ -1280,6 +1280,8 @@ footer {
     .boton-envio{
     width: 90%;
     margin: auto;
+    margin-top: 2.4vh;
+    margin-bottom: 2.4vh;
 }
 
     .pie-pagina{
