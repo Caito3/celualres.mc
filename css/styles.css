@@ -1171,7 +1171,8 @@ footer {
     }
 
     .imagen-producto{
-        height: 34vh;
+        height: 30vh;
+        width: 50%;
     }
 
     .productos{
