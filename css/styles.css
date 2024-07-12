@@ -949,6 +949,10 @@ footer {
     margin-left: 16%;
 }
 
+.mapa{
+    margin: auto;
+}
+
     .productos{
     justify-content: center;
     height: 1090vh;
@@ -960,8 +964,8 @@ footer {
 }
 
     .imagen-producto{
-    height: 38vh;
-    width: 44%;
+    height: 32vh;
+    width: 40%;
 }
 
     .boton-producto{
@@ -1055,6 +1059,10 @@ footer {
     margin-left: 10.5%;
 }
 
+.mapa{
+    margin: auto;
+}
+
 .productos{
     justify-content: center;
     height: 1090vh;
@@ -1066,7 +1074,8 @@ footer {
 }
 
 .imagen-producto{
-    height: 34vh;
+    height: 30vh;
+    width: 38%;
 }
 
 .boton-producto{
@@ -1320,7 +1329,7 @@ footer {
     margin-left: 4%;
 }
     .mapa{
-    grid-column: 1/4;
+    margin: auto;
 }
     #info{
     margin: 0;
