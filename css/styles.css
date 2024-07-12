@@ -901,7 +901,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:440px){
+@media only screen and (max-width:540px){
 
     .header{
         width: 100%;
@@ -916,11 +916,16 @@ footer {
     .imagen-menu{
         display: block;
         width: 15.5%;
-        margin-left: 4%;
+        margin-left: -4%;
     }
 
     .logos{
         display: none;
+    }
+
+    .imagen-celulares{
+        height: 40vh;
+        margin-top: 16vh;
     }
 
     .navegacion{
@@ -1029,7 +1034,7 @@ footer {
     .imagen-menu{
         display: block;
         width: 20%;
-        margin-left: 4%;
+        margin-left: -8%;
     }
 
     .logos{
@@ -1116,7 +1121,8 @@ footer {
 
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:350px){
+    
     .header{
         width: 100%;
         justify-content: flex-start;
@@ -1130,7 +1136,7 @@ footer {
     .imagen-menu{
         display: block;
         width: 20%;
-        margin-left: 2%;
+        margin-left: -8%;
     }
 
     .logos{
@@ -1213,7 +1219,8 @@ footer {
         font-size: 160%;
     }
     .subtitulo-contacto{
-        font-size: 129%;
+        font-size: 120%;
+        
     }
     .formulario{
         width: 90%;
@@ -1344,6 +1351,8 @@ footer {
     .validarFoto{
     margin-top: 2%;
 }
+
+    .nombre-footer{}
 
     .menu-barra{
     width: 70%;
